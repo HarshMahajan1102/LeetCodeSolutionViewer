@@ -1,3 +1,7 @@
+/* Defined some keyframes which let me help with the animations and thanks to ChatGPT for suggesting me this and teaching me */
+/* I have entered this prompt for the following : Can you teach me and suggest me some ways to add animations */
+
+/* For typing animation, I have done the hit and try method to determine the full width */
 @keyframes typing {
     from {
         width: 0;
@@ -8,11 +12,14 @@
     }
 }
 
+/* For hiding the cursor, after the typing animation completes */
 @keyframes hideCursor {
     to {
         border-color: transparent;
     }
 }
+
+/* For the leetcode animation in the very initial stage, moving those letters */
 
 @keyframes moveRight {
     from {
@@ -33,6 +40,8 @@
         opacity: 1;
     }
 }
+
+/* For fading animation, of the intro, wishing paras and also for the categorical divs */
 
 @keyframes fadeMoveUp{
     from{
@@ -78,6 +87,7 @@
     }
 }
 
+/* Giving background color to the bg */
 body{
     background-color: #32cbff;
 }
@@ -85,33 +95,36 @@ body{
 #header {
     display: flex;          
     align-items: center;     
-    background-color: #0087b8;
-    color: #fcddf2;
     height: 60px;  
     width: 100%;
-    margin-left: -1%;
+    color: #fcddf2;
+    background-color: #0087b8;
     padding-right: 2%;
     padding-top: 0.35%;
+    margin-left: -1%;
     margin-top: -0.75%;
     margin-bottom: 1%;
 }
 
+/* Had referred to internet for this image */
 #laptopImg{
-    margin-left: 1%;
     height: 40px;
     width: 40px;
+    margin-left: 1%;
     margin-right: 0;
     padding-right: 0;
 }
 
+/* After hitting and trying with multiple available fonts, I had gone with this font */
 #heading {
+    width: 50%;
     font-size: 40px;  
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    width: 50%;
     margin-left: 0.5%;
     padding-left: 0.5%;
 }
 
+/* Initiated it to be invisible and applying the animation, which will make it appear in a reverse fading way */
 #strLeet {
     color:white;
     opacity: 0;
@@ -119,10 +132,12 @@ body{
     animation: moveLeft 1s ease-out forwards 0s; 
 }
 
+/* I mean the Half code symbol which is (</>) */
 #codeHalfSym{
     color: white;
 }
 
+/* Same case as that of strLeet, btw I meant string by str */
 #strCode{
     color: #36454F;
     opacity: 0;
@@ -130,6 +145,7 @@ body{
     animation: moveRight 1s ease-out forwards 0s;
 }
 
+/* The reason for this anynomous margins and padding of it and that of heading is to place these perfectly on the webpage */
 #searchBtn {
     background: black;
     color: white;
@@ -144,6 +160,8 @@ body{
     padding: 1%;
 }
 
+/* It had some issue as on making it visible, it was visible all the time and not only when I click search button
+so I made it invisible */
 #crossBtn {
     visibility: hidden;
     background-color: #0087b8;
@@ -157,6 +175,7 @@ body{
     align-items: center;
 }
 
+/* ChatGPT teached me about transform function */
 .inputBox {
     height: 30px;
     width: 210px;
@@ -169,6 +188,7 @@ body{
     background-color: #32cbff;
 }
 
+/* ChatGPT teached me of using ::placeholder in inputbox  */
 .inputBox::placeholder {
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -176,6 +196,7 @@ body{
     opacity: 0.35;
 }
 
+/* ChatGPT teached me about box shadow */
 #introHeading{
     width: -5%;
     font-size: 200%;
@@ -206,7 +227,6 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #89a1ef;
     border: black solid;
-    border-radius: 50%;
     border-radius: 20% 50% 25% 50%;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     text-shadow: 2px 0px 10px white;
@@ -223,7 +243,6 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #89a1ef;
     border: black solid;
-    border-radius: 50%;
     border-radius: 50% 20% 50% 25%;
     box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.5);
     text-shadow: 2px 0px 10px white;
@@ -293,6 +312,7 @@ body{
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
 }
 
+/* ChatGPT helped me with using ::hover */
 .category:hover {
     background-color: #ccc;
 }
@@ -320,8 +340,8 @@ body{
     color: white;
 }
 
-
-
+/* This things are to make respecting elements invisible after clicking cpp button, and making those 
+problem names without underline */
 .cppContent {
     display: block;
     text-decoration: none;
@@ -338,3 +358,9 @@ body{
 .probTypeDivClicked{
     visibility: hidden;
 }
+
+
+/* Even after referring to ChatGPT, I was unable to find what's wrong with the CPP button to which 
+I had deployed the js thing, and they are not getting invisble, but the alternative now I have is 
+to add another webpage or to refer to another page through this button, but ig it would consume much more
+memory to create too many pages for each and every category */
