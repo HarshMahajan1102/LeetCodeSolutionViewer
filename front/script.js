@@ -1,6 +1,10 @@
 const category = document.getElementsByClassName('category');
 const categoricalPara = document.getElementsByClassName('categoricalPara');
 const probTypeDiv = document.getElementsByClassName('probTypeDiv');
+const input = document.createElement("input");
+const searchBtn = document.getElementById("searchBtn");
+const searchContainer = document.getElementById("searchContainer");
+const crossBtn = document.getElementById("crossBtn");
 
 // fetch("https://api.github.com/repos/haoel/leetcode", {
 //   headers: {
@@ -27,20 +31,12 @@ const probTypeDiv = document.getElementsByClassName('probTypeDiv');
 
 
 
-const input = document.createElement("input");
-const searchBtn = document.getElementById("searchBtn");
-const searchContainer = document.getElementById("searchContainer");
-const crossBtn = document.getElementById("crossBtn");
-// console.log(crossBtn)
+
 document.getElementById('searchBtn').addEventListener('click', () => {
     input.type = "text";
     input.placeholder = "Enter the problem name/number";
-    // crossBtn.style.display = "block"
     searchContainer.innerHTML = "";
     searchContainer.appendChild(input);
-    
-    // input.style.backgroundColor = 'white';
-    // input.style.color = 'black';
     searchBtn.style.visibility = 'hidden';
     crossBtn.style.visibility = 'visible';
 
@@ -55,11 +51,6 @@ document.getElementById('searchBtn').addEventListener('click', () => {
 //     searchContainer.innerHTML = ""; // Clear input field
 // });
 
-// CGPT
-// document.querySelector(".toggle-btn").addEventListener("click", function(event) {
-//     this.parentElement.classList.toggle("active");
-//     event.stopPropagation(); // Prevents the click from bubbling up
-// });
 
 // const easy = document.getElementById('catEasy').addEventListener('click', () => {getDataDiff('Easy')});
 // const medium = document.getElementById('catMedium').addEventListener('click', () => {getDataDiff('Medium')});
@@ -77,27 +68,11 @@ document.getElementById('searchBtn').addEventListener('click', () => {
 // const qS4 = document.getElementById('catQSet4').addEventListener('click', () => {getDataSerialNo('QSet4')});
 // const qS5 = document.getElementById('catQSet5').addEventListener('click', () => {getDataSerialNo('QSet5')});
 
-function getDataDiff(str) {
+// function getDataDiff(str) {
     
-}
+// }
 
-// function getDataLang(str) {
-    // fetch(`https://api.github.com/repos/haoel/leetcode/tree/master/algorithms/${str}`, {
-        //     headers: {
-            //       "Authorization": `token ${token}`
-            //     }
-            //   })
-            //     .then(response => response.json())
-            //     .then(data => console.log(data))
-            //     .catch(error => console.error("Error fetching repository:", error));
-        // }    
-            
-function getDataSerialNo(str) {
-    
-}
-            
-            
-async function getDataLang(str) {
+ async function getDataLang(str) {
     const apiUrl = `https://api.github.com/repos/haoel/leetcode/contents/algorithms/${str}?ref=master`;
     
     try {
@@ -130,9 +105,10 @@ async function getDataLang(str) {
         console.error("Error fetching data:", error);
     }
 }
-
-// Call the function on page load
-// fetchLeetcodeFiles();
+            
+// function getDataSerialNo(str) {
+    
+// }
 
 document.getElementById('catCpp').addEventListener('click', () => {
     // categoricalPara.classList.remove('categoricalPara');
@@ -141,7 +117,6 @@ document.getElementById('catCpp').addEventListener('click', () => {
     // category.classList.add('categoryClicked');
     // probTypeDiv.classList.remove('probTypeDiv');
     // probTypeDiv.classList.add('probTypeDivClicked');
-
     // categoricalPara.style.visibility = 'hidden';
     // category.style.visibility = 'hidden';
     // probTypeDiv.style.visibility = 'hidden';
