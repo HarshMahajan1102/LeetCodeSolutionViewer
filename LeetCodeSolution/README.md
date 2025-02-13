@@ -8,31 +8,28 @@ is a public repository containing solutions to many leetcode problems.
 
 This project comprises of following functionality :
 
-    Animated Homepage :
+Animated Homepage :
         Homepage comprises of animated logo and animated appearance of wishing para.
 
-       ![Alt text](https://raw.githubusercontent.com/HarshMahajan1102/LeetCode/main/image.png)
+![HomePage](img1.png)
 
-    Search Button Functionality : 
+Search Button Functionality : 
         It helps user to search the question by its name or number.
 
-        ![Alt text](/img2.png)
+![HomePageWithSearchBtn](img2.png)
 
-    Search Page Functionality : 
+Search Page Functionality : 
         A page where user can find the list of problems with a dynamic colouring of the problem based on its difficulty.
         It also comprises of a home button which will direct the user to home page again. The problem bars comprises of 
         problem number, problem name, difficulty and the language of available solutions.
 
-        ![Alt text](/img3.png)
+![SearchPage](img3.png)
 
-    Solution Page :
+Solution Page :
         The solution page comprises of :
             Question Subpage :
                 It has question title, question number, a home button, question difficulty, question overview and context.
             Solution Subpage :
                 The code snippet view of solution in attractive colours, with a language switcher button in it.
 
-        ![Alt text](/img4.png)
-
-    Responsive Design :
-        The whole website was supposed to be responsive on mobile phone too, but due to time constraints, this job is done halfway. 
+![SolutionPage](img4.png)
